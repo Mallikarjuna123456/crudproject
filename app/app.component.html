@@ -1,0 +1,10 @@
+
+
+<router-outlet></router-outlet>
+<div *ngFor = 'let val of arr' class="block">
+    <h4>{{val.id}}. {{val.title}}</h4>
+    <p>{{val.body}}</p>
+</div>
+
+<button (click) = 'showData()'[ngStyle] = "{'display':'block','margin':'auto','background-color':'green','color':'#fff','cursor':'pointer'}"s>Load More</button>
+
